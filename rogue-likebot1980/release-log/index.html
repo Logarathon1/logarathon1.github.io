@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Release Log - Rogue-likebot 1980 - Logarathon1's Epic Website</title>
+<link rel="stylesheet" href="https://logarathon1.github.io/styles.css">
+<link rel="icon" href="Images/site-icon.png">
+</head>
+<body>
+<div class = "wrapper">
+<header>
+<h1><a href = "index.html">hieeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee<a></h1>
+<nav>
+<ul>
+<li><a href = "https://logarathon1.github.io/">Home</a></li>
+<li><a href = "https://logarathon1.github.io/rogue-likebot1980">Rogue-likebot 1980</a></li>
+<li><a href = "https://logarathon1.github.io/thanos-bot">Thanos Bot Thanos Bot</a></li>
+<li><a href = "https://logarathon1.github.io/mdhhcd-bot">MDHHCD-Bot</a></li>
+<li><a href = "https://logarathon1.github.io/russian-roulette-bot">Russian Roulette Bot</a></li>
+</ul>
+</nav>
+</header>
+
+<section class = "text2">
+<article>
+<figure>
+<h2><u>Rogue-likebot 1980 v1.2 Details</u></h2>
+<p>16/02/2019</p>
+<h3><b>Encounters</b></h3>
+<ul>
+<li>Added "<b>Dungeon Explorer</b>" Encounter</li>
+<li>Added "<b>Hero Shrine</b>" Encounter</li>
+<li>Added "<b>The Smith</b>" Encounter</li>
+<li>Added "<b>Demon Encounter</b>" Encounter</li>
+<li>Added "<b>Cursed Book</b>" Encounter</li>
+<li>Added "<b>The Fountain</b>" Encounter</li>
+<li>Added "<b>Pool of Honey</b>" Encounter</li>
+<li>Added "<b>Hidden Trap</b>" Encounter</li>
+<li>Added "<b>The Final Encounter</b>" Encounter</li>
+<li><b>Chest of Gold</b>: Added "Open Chest" and "Ignore Chest" options</li>
+<li><b>Portal Sigil => Strange Sigil</b>: Added various outcomes to "Step Onto Sigil" option</li>
+<li><b>The Library</b>: Added "Explore Library", "Find a Place to Rest" and "Leave The Library" options</li>
+<li><b>The Merchant</b>: Added "Rob Merchant" option</li>
+<li><b>Empty Room</b>: Added "Search for Loot" option</li>
+<li><b>Loot Reward</b>: Added "Scrap Reward" option</li>
+</ul>
+
+<h3><b>The Dungeon</b></h3>
+<ul>
+<li><b>Dungeons</b> now consist of <b>stages</b> that contain <b>themed enemies, bosses, encounters, and loot</b></li>
+<li>Each <b>stage</b> contains a <b>theme dictated amount of floors</b> that each contain a <b>theme dictated amount of rooms</b></li>
+<li><b>Rooms</b> can either contain an <b>enemy</b>, an <b>encounter</b>, or be <b>empty</b></li>
+<li>The <b>Final Floor</b> for each <b>stage</b> is guaranteed to contain one <b>Shop</b> and afterwards a <b>Boss Fight</b></li>
+<li><b>Health</b> is now <b>restored to full</b> after defeating a <b>Stage Boss</b> (see below) instead of after any boss</li>
+</ul>
+
+<h3><b>Equipment Modifications</b></h3>
+<ul>
+<li><b>Equipment</b> can now be <b>modified</b> instead of <b>swapped out or abandoned</b></li>
+<li><b>Modification success chance</b> is dictated by the <b>amount of modifications</b> the piece of equipment to be modified already has or have been attempted</li>
+<li>A <b>successful modification</b> will result in <b>+1 Attack, +1 Defense, or +4 Health/Max Health</b> depending on the type of equipment being modified</li>
+<li>An <b>unsuccessful modification</b> will result in the <b>reverse of the bonus to the improvement</b></li>
+<li>The amount of <b>modifications</b> made can be <b>reset</b> or <b>decreased</b> during <b>The Smith</b> encounter</li>
+</ul>
+
+<h3><b>Enemies</b></h3>
+<ul>
+<li><b>Level x0 Bosses</b> are now <b>Stage Bosses</b></li>
+<li><b>Stage Bosses</b> occur at the <b>end of every Stage</b> and must be <b>defeated</b> for the <b>player to progress</b> (no more portal skipping past them)</li>
+<li><b>Stage Bosses</b> have a <b>deadlier moveset</b> (Attack Move is now 2x Attack, 0x Defense, Neutral Move is now 1.25x Attack and Defense, Defend Move is now 2x Defense, and Heal Move is now +8 Health)</li>
+<li>Some <b>Encounter Choices</b> may result in a <b>Mini Boss</b> fight</li>
+<li><b>Mini Bosses</b> have <b>stats near or equivalent</b> to that of a <b>Stage Boss</b>, but will perform <b>regular attacks</b></li>
+</ul>
+
+<h3><b>Levelling/XP</b></h3>
+<ul>
+<li><b>Enemies</b> will now drop <b>XP</b> upon death, allowing the <b>player</b> to <b>passively and consistently improve their stats</b></li>
+<li>Each <b>level-up</b> will grant the player <b>+5 Core Health</b>, each <b>even numbered level-up</b> will grant the player <b>+1 Core Attack and +1 Core Defense</b></li>
+</ul>
+
+<h3><b>Classes</b></h3>
+<ul>
+<li><b>The Paladin</b>'s <b>damage reflection</b> <b>reduced</b> to <b>25%</b> (was previously 66%)</li>
+<li><b>The Brawler</b> now deals an <b>extra 5 damage</b> when <b>completely unarmed</b> (was a 2x Attack increase)</li>
+<li><b>The Hunter</b>'s active power is now <b>Arrowstorm</b> (When using a <b>Ranged-type Weapon</b>, <b>Steady Shot</b> is replaced with <b>Volley</b> - Fire <b>three ranged shots</b>, for each there is a <b>66%</b> chance to deal <b>1x</b> your <b>attack</b> stat, <b>0.75x Defense</b>)</li>
+</ul>
+
+<h3><b>Other</b></h3>
+<ul>
+<li>Various other bug-fixes</li>
+</ul>
+</figure>
+</hgroup>
+</article>
+</section>
+
+<aside>
+<section class = "about">
+<h2>Useful Links</h2>
+<p><a href = "https://www.facebook.com/pg/roguelikebot1980">Facebook Page</a></p>
+<p><a href = "https://botappreciationsociety.fandom.com/wiki/Rogue-likebot_1980">BAS Wiki Page</a></p>
+<p><a href = "https://logarathon1.github.io/rogue-likebot1980/release-log">Release Log</a></p>
+</section>
+</aside>
+
+<article>
+<section class = "text">
+<figure>
+<h2><u>Rogue-likebot 1980 v1.1.3 Details</u></h2>
+<p>10/01/2019</p>
+<h3><b>Unarmed Weapons</b></h3>
+<ul>
+<li><b>The Brawler</b> (and all characters that are unarmed) now use a <b>separate attack-set</b> that focuses dealing <b>high damage with an RNG chance to defend</b> (similar to The Hunter and ranged weapons having an RNG chance to deal damage but a guaranteed chance to defend), cheers to Caden Kelley for the suggestion</li>
+<li>Added <b>Unarmed Weapons</b> that use the new attack-set</li>
+</ul>
+
+<h3><b>Class Tweaks</b></h3>
+<ul>
+<li>Tweaked individual class stats so that classes with a higher initial defense will generally have a higher defense throughout their run (similar to how each class has a core attack stat)</li>
+</ul>
+
+<h3><b>Enemies</b></h3>
+<ul>
+<li>Lowered the health of <b>Fallen-type Enemies</b></li>
+</ul>
+
+<h3><b>Other</b></h3>
+<ul>
+<li>Various other bug-fixes</li>
+</ul>
+</figure>
+</section>
+</article>
+
+<article>
+<section class = "text">
+<figure>
+<h2><u>Rogue-likebot 1980 v1.1.2 Details</u></h2>
+<p>09/01/2019</p>
+<h3><b>Long Weapons</b></h3>
+<ul>
+<li>Buffed <b>Hard Thrust</b> - <b>1.25x</b> Damage => <b>1.5x</b> Damage</li>
+</ul>
+
+<h3><b>Enemies</b></h3>
+<ul>
+<li><b>Fallen-type Enemies</b> now drop a piece of their previous equipment if one is available</li>
+</ul>
+
+<h3><b>Other</b></h3>
+<ul>
+<li>Various other bug-fixes</li>
+</ul>
+</figure>
+</section>
+</article>
+
+<section class = "text">
+<article>
+<figure>
+<h2><u>Rogue-likebot 1980 v1.1.1 Details</u></h2>
+<p>07/01/2019</p>
+<h3><b>Enemies</b></h3>
+<ul>
+<li><b>Increased Loot Drop Rate</b> - <b>25%</b> => <b>75%</b> for <b>standard</b> enemies, <b>100%</b> for <b>Boss-type</b> and <b>Fallen-type</b> enemies  </li>
+<li>The Player now <b>heals to full health</b> after <b>Boss Fights</b></li>
+</ul>
+
+<h3><b>Encounters</b></h3>
+<ul>
+<li>Encounter chance <b>increased</b> - <b>50%</b> chance for a <b>random</b> encounter and <b>30%</b> chance for an <b>empty room</b> if an <b>encounter has not occurred</b>, <b>0%</b> chance for either <b>if an encounter has already occurred</b></li>
+</ul>
+
+<h3><b>Class Tweaks</b></h3>
+<ul>
+<li><b>The Warrior</b>: Active Ability is now <b>Executioner</b> - <b>Angry-type melee attacks</b> do an <b>extra 1.5x attack</b> damage when the <b>enemy is under 20% Health</b>, suggested by Luke Kinkade and Caden Kelley</li>
+</ul>
+
+<h3><b>Other</b></h3>
+<ul>
+<li>Various other bug-fixes</li>
+</ul>
+</figure>
+</hgroup>
+</article>
+</section>
+
+<section class = "text">
+<article>
+<figure>
+<h2><u>Rogue-likebot 1980 v1.1 Details</u></h2>
+<p>20/12/2018</p>
+<h3><b>Equipment</b></h3>
+<ul>
+<li><b>Armour</b>, <b>Weapons</b>, and <b>Relics</b> now occupy <b>dedicated spaces</b></li>
+<li><b>Weapons</b> have been divided into <b>three categories</b>, each with a <b>unique move-set</b></li>
+<ul>
+<li><b>Short</b>, uses the <b>standard</b> move-set</li>
+<li><b>Long</b>, uses a <b>penetrating</b> move-set</li>
+<li><b>Ranged</b>, uses an <b>RNG-based</b> move-set</li>
+</ul>
+</ul>
+
+<h3><b>Classes and Combat</b></h3>
+<ul>
+<li><b>The Hunter</b> - Specializes in <b>Ranged Weapons</b></li>
+<li><b>The Lancer</b> - Specializes in <b>Long Weapons</b></li>
+<li><b>The Brawler</b> - Specializes in <b>Unarmed Combat</b></li>
+<li><b>Ability/Combat Move Tweaks</b></li>
+<ul>
+<li>Replaced <b>Vicious Slash</b> with <b>Hard Swing</b> (<b>1.5x</b> Attack, <b>0x</b> Defense) for most classes</li>
+<li>Replaced <b>Steady Block</b> with <b>Deflective Parry</b> (<b>0x</b> Attack, <b>1.5x</b> Defense) for most classes</li>
+<li>Replaced <b>Sideswipe</b> with <b>Dodge Roll</b> (<b>50%</b> chance to <b>evade all damage</b>, <b>50%</b> chance to <b>take all damage</b>) for most classes</li>
+</ul>
+<li>Removed <b>Mid-Combat Healing</b></li>
+</ul>
+
+<h3><b>Other</b></h3>
+<ul>
+<li>Various other bug-fixes</li>
+</ul>
+</figure>
+</hgroup>
+</article>
+</section>
+
+<article>
+<section class = "text">
+<figure>
+<h2><u>Rogue-likebot 1980 v1.0.2 Details</u></h2>
+<p>??/12/2018</p>
+<h3><b>Encounters</b></h3>
+<ul>
+<li>Added "<b>Empty Room</b>" Encounter</li>
+</ul>
+
+<h3><b>Other</b></h3>
+<ul>
+<li>Various other bug-fixes</li>
+</ul>
+</figure>
+</section>
+</article>
+
+<article>
+<section class = "text">
+<figure>
+<h2><u>Rogue-likebot 1980 v1.0.1 Details</u></h2>
+<p>09/12/2018</p>
+<h3><b>The Player</b></h3>
+<ul>
+<li><b>New Character</b> generation now performed via <b>vote</b></li>
+<li>Added <b>player name submission</b> functionality via <b>RPGBot</b> on Discord // <b>rpg!submit &lt;submission here&gt;</b></li>
+<li>Added several colourful <b>death messages</b></li>
+</ul>
+
+<h3>Class and Combat Tweaks</h3>
+<ul>
+<li><b>Wall of Thorns</b> reflected damage increased to <b>66%</b></li>
+<li>Reworked <b>healing</b> to now consume <b>Healing Supplies</b></li>
+<li><b>Increased</b> the damage <b>healed</b> from <b>in-combat healing</b></li>
+<li><b>Enemies</b> can no longer perform the same move twice in a row</li>
+</ul>
+
+<h3>Encounter Tweaks</h3>
+<ul>
+<li><b>Rebalanced</b> the <b>health</b> drop from <b>Pedestal Loot</b> encounters</li>
+</ul>
+
+<h3><b>Other</b></h3>
+<ul>
+<li>Various other bug-fixes</li>
+</ul>
+</figure>
+</section>
+</article>
+
+<article>
+<section class = "text">
+<figure>
+<h2><u>Rogue-likebot 1980 v1.0 Details</u></h2>
+<p>04/12/2018</p>
+<h3><b>The Player</b></h3>
+<ul>
+<li>3 Classes with unique abilities</li>
+<ul>
+<li><b>The Warrior</b>: Bloodrush</li>
+<li><b>The Rogue</b>: Shadow Stepper</li>
+<li><b>The Paladin</b>: Wall of Thorns</li>
+</ul>
+</ul>
+
+<h3>Enemies</h3>
+<ul>
+<li>Enemy Types include <b>Standard</b> Enemies, <b>Bosses</b>, and <b>Fallen Heroes</b></li>
+</ul>
+
+<h3>Combat</h3>
+<ul>
+<li>5 Moves Available<li>
+<ul>
+<li>Vicious Slash</li>
+<li>Balanced Strike</li>
+<li>Steady Block</li>
+<li>Sideswipe</li>
+<li>Heal</li>
+</ul>
+</ul>
+
+<h3><b>Encounters</b></h3>
+<ul>
+<li>Added "<b>Random Loot</b>" encounter</li>
+<li>Added "<b>Random Gold</b>" encounter</li>
+<li>Added "<b>Portal Sigil</b>" encounter</li>
+<li>Added "<b>Pedestal Loot</b>" encounter</li>
+<li>Added "<b>The Library</b>" encounter</li>
+<li>Added "<b>The Merchant</b>" encounter</li>
+</ul>
+
+<h3><b>Global Stats</b></h3>
+<ul>
+<li>Top 10 Leaderboard</li>
+<li>Deathlog of all previous runs</li>
+</ul>
+
+<h3><b>Other</b></h3>
+<ul>
+<li>Various other bug-fixes</li>
+</ul>
+</figure>
+</section>
+</article>
+
+<footer>
+<p>&copy; 2019, Logan Fincham<p>
+</footer>
+</div>
+</body>
+</html>

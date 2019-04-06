@@ -1,0 +1,143 @@
+body{
+color: #ffffff;
+background-color: #ffffff;
+background-image: url("Images/background.png");
+background-position: center;
+font-family: Georgia, Times, serif;
+line height: 1.4em;
+margin: opx;}
+
+.wrapper{
+width: 940px;
+margin: 20px auto 20px auto;
+border: 2px solid #000000;
+background-color: #454545;}
+
+header{
+height: 160px;
+background-image: url("Images/banner.png");}
+h1{
+text-indent: -9999px;
+width: 940px;
+height: 160px;
+margin: 0px;}
+
+nav, footer{
+clear: both;
+color: #bbbbbb;
+background-color: #2d2d2d;
+height: 30px;}
+
+nav ul{
+margin: 0px;
+padding: 5px 30px 5px 30px;}
+
+nav li{
+display: inline;
+margin-right: 40px;}
+
+nav li a{
+color: #bbbbbb;}
+
+nav li a:hover, nav li current {
+color: #ffffff;}
+
+section.imagewithtext{
+float: left;
+width: 599px;
+margin: 30px;
+margin-top: 60px;
+border: 1px solid #888888;}
+
+section.text{
+float: left;
+width: 645px;
+margin-left: 10px;
+border-right: 5px solid #2d2d2d;}
+
+section.about{
+float: right;
+width: 234px;
+height: 332px;
+margin-top: 30px;
+padding-left: 23px;
+padding-right: 23px;
+border-left: 5px solid #2d2d2d;}
+
+article{
+clear: both;
+overflow: auto;
+width: 100%;}
+
+hgroup{
+margin-top: 40px;}
+
+section.imagewithtext figure{
+float: left;
+width: 220px;
+height: 220px;
+margin: 20px;
+border: 5px solid #2d2d2d;
+}
+figcaption{
+font-size: 90%;
+text-align: left;}
+
+section.imagewithtext hgroup{
+float: left;
+width: 310px;
+height: 220px;
+}
+
+section.text figure{
+float: left;
+width: 575px;
+padding: 5px;
+padding-left: 20px;
+margin: 20px;
+border: 1px solid #888888;}
+figcaption{
+font-size: 90%;
+text-align: left;}
+
+aside{
+text-align: center;
+width: 230px;
+float: right;
+padding: 0px 0px 0px 10px;}
+
+aside p{
+font-size: 150%;
+border: 2px solid #2d2d2d;
+margin: 5px;
+padding: 5px;
+}
+
+aside section p:hover{
+color: #ffffff;
+background-color: #2d2d2d;
+}
+
+a{
+color: #bbbbbb;
+text-decoration: none;}
+h1,h2,h3{
+font-weight: normal;}
+h2{
+margin: 10px 0px 5px 0px;
+padding: 0px;}
+h3{
+margin: 0px 0px 10px 0px;
+color: #dddddd;}
+
+aside h2{
+border: 2px solid #2d2d2d;
+padding: 10px 0px 10px 0px;
+color: #dddddd;
+background-color: #666666}
+
+footer{
+color: #ffffff;
+text-align: center;
+font-size: 80%;
+padding: 1px 0px 5px 0px;}
