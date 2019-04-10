@@ -186,11 +186,11 @@ padding: 1px 0px 5px 0px;}
 
 table {
   border-collapse: collapse;
-  width: 100%;
+  width: 95%;
 }
 
 td, th {
   border: 1px solid #dddddd;
-  text-align: left;
+  text-align: center;
   padding: 8px;
 }
