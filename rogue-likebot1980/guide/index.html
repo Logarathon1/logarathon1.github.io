@@ -30,7 +30,9 @@
 <h3><b>Summary</b></h3>
 <h4>This section of the website will be where the official Rogue-likebot 1980 Guide will be. The Guide will contain some documentation of the bot's functions and act as a reference for the game</h4>
 
+<a name="Player"></a>
 <h2><u>The Explorer</u></h2>
+<a name="Player_Classes"></a>
 <h3><b>Classes</b></h3>
 <h5>As of v1.3, there are six different classes available, with a selection of three being generated at the start of the game. Each class starts with different equipment, stats, and a unique passive ability and active move.</h5>
 
@@ -49,10 +51,12 @@
 </tr>
 </table>
 
+<a name="Player_Stats"></a>
 <h3><b>Stats</b></h3>
 <h5>Each Explorer has three main stats: Health (HP - dictates how much damage the Explorer can sustain before dying), Attack (ATK - how much damage the Explorer can deal), and Defense (DEF - how much damage the Explorer can block)</h5>
 <h5>These stats consist of two seperate stats - a Core Stat and a Bonus Stat. The Core Stat comes from the Explorer's class and can only be changed via levelling up and some encounters, whereas the Bonus Stat comes from the Explorer's equipment and can be changed via upgrading or equipping new gear.</h5>
 
+<a name="Player_Names_Titles"></a>
 <h3><b>Names and Titles</b></h3>
 <h5>Explorers are given names at the start of the Run, as well as a title that changes based on how far through The Dungeon they are.</h5>
 <h5>Explorer Names are taken from a name pool that is populated by a few generic names alongside many user-submitted names. To submit a name <a href = "https://discord.gg/mJURtpv">join The Bot Appreciation Society Discord Server</a>, go to the #play-with-bots channel, and type "rpg!submit [enter name here]" without quotations or brackets. You should receive a confirmation message from RPGBot, but if not tag me (@Logarathon) and I'll sort it out.</h5>
@@ -60,6 +64,11 @@
 
 <a name="Player_Moves"></a>
 <h2>Player Moves</h2>
+<h5>The Combat Moves an Explorer can use are determined mainly by what type of Main Weapon they are currently wielding; an Explorer wielding a bow (Ranged-type weapon) would use moves from the Ranged-type Moves list.</h5>
+<h5>Explorers also have one special Active Move dependent on what Class they belong to, and whether it is active or not depends on if it's requirements are fulfilled; a Warrior wielding it's original Warrior's Axe would have Vicious Slash available as it requires a Short-type, Two-handed Weapon, but a Paladin without a Shield would not have access to Steady Block.</h5>
+<h5>Additional moves, such as other Class Moves, some Enemy Moves, and other rare powerful moves, can be learnt via encounters throughout The Dungeon.</h5>
+<h5>Finally, some pieces of equipment may have unique magical moves bound to them.</h5>
+
 <table>
 <tr>
 <th colspan="2">
@@ -157,7 +166,9 @@
 
 <br>
 
+<a name="Enemy"></a>
 <h2><u>Enemies</u></h2>
+<a name="Enemy_Types"></a>
 <h3><b>Types</b></h3>
 <h5>As of v1.3, there are three main types of enemies - Standard, Mini Boss, and Boss - and nine sub-types - Explorer, Fallen, Ethereal, Flying, Small, Big, Mounted, Armoured, and Burrowing. While an enemy can only belong to one of the main types, they may have any combination of up to two sub-types, such as a Small and Ethereal Standard-type Enemy, or a Mounted Flying Boss. The main types affect the enemy's main stats upon generation, while the sub-types can have various effects.</h5>
 
@@ -190,6 +201,147 @@
 </tr>
 </table>
 
+<a name="Enemy_Stats"></a>
+<h3><b>Stats</b></h3>
+<h5>Enemy Stats are very similar to the three main Explorer Stats - Health (HP) that dictates how much damage the enemy can take before dying, Attack (ATK) that determines how much damage they can deal, and Defense (DEF) that determines how much damage they can block</h5>
+<h5>These stats differ from the Explorer's stats in that they do not rely on Core and Bonus values, the HP, ATK, and DEF of an enemy is influenced only by the amount of enemies the Explorer has previously defeated, and the types/sub-types the enemy belongs to.</h5>
+
+<a name="Enemy_Moves"></a>
+<h2>Enemy Moves</h2>
+<h5>Each Enemy has a specific attack-set that draws from this centralized pool of attacks.</h5>
+<h5>The Power Level of the move to be used is dependent on the Stage.</h5>
+<h5>Moves marked with an asterisk can be learnt by the Explorer</h5>
+<table>
+<tr>
+<th colspan="2">
+<a name="Enemy_Melee_Attack_Moves"></a>
+<h3><b>Melee Attacks</b></h3>
+<p>Attack Moves that deal Melee Damage</p>
+<br>
+</th>
+</tr>
+
+<tr>
+<th width="50%"><b><u>Vicious Slash</u></b><br><p>Strong Attack</p><br><p>I - 2x ATK, 0x DEF</p><br><p>II - 2.05x ATK, 0x DEF</p><br><p>III - 2.1x ATK, 0x DEF</p><br><p>IV - 2.15x ATK, 0x DEF</p><br><p>V - 2.2x ATK, 0x DEF</p><br><p>Ultra - 2.3x ATK, 0x DEF</p><br></th>
+<th width="50%"><b><u>Hard Strike</u></b><br><p>Normal Attack</p><br><p>I - 1.5x ATK, 0x DEF</p><br><p>II - 1.55x ATK, 0x DEF</p><br><p>III - 1.6x ATK, 0x DEF</p><br><p>IV - 1.65x ATK, 0x DEF</p><br><p>V - 1.7x ATK, 0x DEF</p><br><p>Ultra - 1.8x ATK, 0x DEF</p><br></th>
+</tr>
+<tr>
+<th width="50%"><b><u>Hidden Stab</u></b><br><p>Penetrating Attack</p><br><p>I - 0.5x ATK [PEN], 0x DEF</p><br><p>II - 0.55x ATK [PEN], 0x DEF</p><br><p>III - 0.6x ATK [PEN], 0x DEF</p><br><p>IV - 0.65x ATK [PEN], 0x DEF</p><br><p>V - 0.7x ATK [PEN], 0x DEF</p><br><p>Ultra - 0.8x ATK [PEN], 0x DEF</p><br></th>
+<th width="50%"><b><u>Side Slash</u></b><br><p>Evasive Move</p><br><p>I - 1.25x ATK, 0x DEF, 40% EVA</p><br><p>II - 1.3x ATK, 0x DEF, 40% EVA</p><br><p>III - 1.35x ATK, 0x DEF, 40% EVA</p><br><p>IV - 1.4x ATK, 0x DEF, 40% EVA</p><br><p>V - 1.45x ATK, 0x DEF, 40% EVA</p><br><p>Ultra - 1.55x ATK, 0x DEF, 40% EVA</p><br></th>
+</tr>
+<tr>
+<th width="50%"><b><u>Envenoming Strike</u></b><br><p>Poison Attack</p><br><p>I - 1.25x ATK, 0x DEF, 3 Poison if damaged</p><br><p>II - 1.3x ATK, 0x DEF, 3 Poison if damaged</p><br><p>III - 1.35x ATK, 0x DEF, 3 Poison if damaged</p><br><p>IV - 1.4x ATK, 0x DEF, 3 Poison if damaged</p><br><p>V - 1.45x ATK, 0x DEF, 3 Poison if damaged</p><br><p>Ultra - 1.55x ATK, 0x DEF, 3 Poison if damaged</p><br></th>
+<th width="50%"></th>
+</tr>
+
+<tr>
+<th colspan="2">
+<a name="Enemy_Melee_Neutral_Moves"></a>
+<h3><b>Melee Neutrals</b></h3>
+<p>Neutral Moves that deal Melee Damage</p>
+<br>
+</th>
+</tr>
+
+<tr>
+<th width="50%"><b><u>Guarded Slam</u></b><br><p>Aggressive Neutral</p><br><p>I - 1.5x ATK, 0.5x DEF</p><br><p>II - 1.55x ATK, 0.55x DEF</p><br><p>III - 1.6x ATK, 0.6x DEF</p><br><p>IV - 1.65x ATK, 0.65x DEF</p><br><p>V - 1.7x ATK, 0.7x DEF</p><br><p>Ultra - 1.8x ATK, 0.8x DEF</p><br></th>
+<th width="50%"><b><u>Balanced Blow</u></b><br><p>Neutral</p><br><p>I - 1x ATK, 1x DEF</p><br><p>II - 1.05x ATK, 1.05x DEF</p><br><p>III - 1.1x ATK, 1.1x DEF</p><br><p>IV - 1.15x ATK, 1.15x DEF</p><br><p>V - 1.2x ATK, 1.2x DEF</p><br><p>Ultra - 1.3x ATK, 1.3x DEF</p><br></th>
+</tr>
+<tr>
+<th width="50%"><b><u>Counter Strike</u></b><br><p>Defensive Neutral</p><br><p>I - 0.5x ATK, 1.5x DEF</p><br><p>II - 0.55x ATK, 1.55x DEF</p><br><p>III - 0.6x ATK, 1.6x DEF</p><br><p>IV - 0.65x ATK, 1.65x DEF</p><br><p>V - 0.7x ATK, 1.7x DEF</p><br><p>Ultra - 0.8x ATK, 1.8x DEF</p><br></th>
+<th width="50%"></th>
+</tr>
+
+<tr>
+<th colspan="2">
+<a name="Enemy_Ranged_Attack_Moves"></a>
+<h3><b>Ranged Attacks</b></h3>
+<p>Attack Moves that deal Ranged Damage</p>
+<br>
+</th>
+</tr>
+
+<tr>
+<th width="50%"><b><u>Blast Beam</u></b><br><p>Very Strong Attack</p><br><p>I - 50% for 2x ATK, 0x DEF</p><br><p>II - 50% for 2.05x ATK, 0x DEF</p><br><p>III - 50% for 2.1x ATK, 0x DEF</p><br><p>IV - 50% for 2.15x ATK, 0x DEF</p><br><p>V - 50% for 2.2x ATK, 0x DEF</p><br><p>Ultra - 50% for 2.3x ATK, 0x DEF</p><br></th>
+<th width="50%"><b><u>Aimed Blast</u></b><br><p>Strong Attack</p><br><p>I - 33% for 1.5x ATK, 0x DEF</p><br><p>II - 33% for 1.55x ATK, 0x DEF</p><br><p>III - 33% for 1.6x ATK, 0x DEF</p><br><p>IV - 33% for 1.65x ATK, 0x DEF</p><br><p>V - 33% for 1.7x ATK, 0x DEF</p><br><p>Ultra - 33% for 1.8x ATK, 0x DEF</p><br></th>
+</tr>
+<tr>
+<th width="50%"><b><u>Steady Shot</u></b><br><p>Normal Attack</p><br><p>I - 33% for 1.25x ATK, 0.5x DEF</p><br><p>II - 33% for 1.3x ATK, 0.55x DEF</p><br><p>III - 33% for 1.35x ATK, 0.6x DEF</p><br><p>IV - 33% for 1.4x ATK, 0.65x DEF</p><br><p>V - 33% for 1.45x ATK, 0.7x DEF</p><br><p>Ultra - 33% for 1.55x ATK, 0.8x DEF</p><br></th>
+<th width="50%"><b><u>Venom Spray</u></b><br><p>Evasive Move</p><br><p>I - 50% for 1x ATK x5, 0.5x DEF, 1 Poison for each hit that deals damage</p><br><p>II - 50% for 1.05x ATK x5, 0.55x DEF, 1 Poison for each hit that deals damage</p><br><p>III - 50% for 1.1x ATK x5, 0.6x DEF, 1 Poison for each hit that deals damage</p><br><p>IV - 50% for 1.15x ATK x5, 0.65x DEF, 2 Poison for each hit that deals damage</p><br><p>V - 50% for 1.2x ATK x5, 0.7x DEF, 2 Poison for each hit that deals damage</p><br><p>Ultra - 50% for 1.3x ATK x5, 0.8x DEF, 3 Poison for each hit that deals damage</p><br></th>
+</tr>
+
+<tr>
+<th colspan="2">
+<a name="Enemy_Ranged_Neutral_Moves"></a>
+<h3><b>Ranged Neutrals</b></h3>
+<p>Neutral Moves that deal Ranged Damage</p>
+<br>
+</th>
+</tr>
+<tr>
+<th width="50%"></th>
+<th width="50%"></th>
+</tr>
+
+<tr>
+<th colspan="2">
+<a name="Enemy_Defend_Moves"></a>
+<h3><b>Defends</b></h3>
+<p>Moves that protect the user</p>
+<br>
+<tr>
+<th width="50%"><b><u>Strong Block</u></b><br><p>Strong Defend</p><br><p>I - 0x ATK, 2x DEF</p><br><p>II - 0x ATK, 2.05x DEF</p><br><p>III - 0x ATK, 2.1x DEF</p><br><p>IV - 0x ATK, 2.15x DEF</p><br><p>V - 0x ATK, 2.2x DEF</p><br><p>Ultra - 0x ATK, 2.3x DEF</p><br></th>
+<th width="50%"><b><u>Steady Guard</u></b><br><p>Normal Defend</p><br><p>I - 0x ATK, 1.5x DEF</p><br><p>II - 0x ATK, 1.55x DEF</p><br><p>III - 0x ATK, 1.6x DEF</p><br><p>IV - 0x ATK, 1.65x DEF</p><br><p>V - 0x ATK, 1.7x DEF</p><br><p>Ultra - 0x ATK, 1.8x DEF</p><br></th>
+</tr>
+
+<tr>
+<th colspan="2">
+<a name="Enemy_Evade_Moves"></a>
+<h3><b>Evades</b></h3>
+<p>Moves that can evade attacks</p>
+<br>
+<tr>
+<th width="50%"><b><u>Super Dodge</u></b><br><p>Strong Evade</p><br><p>I - 0x ATK, 0x DEF, 60% EVA</p><br><p>II - 0x ATK, 0x DEF, 65% EVA</p><br><p>III - 0x ATK, 0x DEF, 70% EVA</p><br><p>IV - 0x ATK, 0x DEF, 75% EVA</p><br><p>V - 0x ATK, 0x DEF, 80% EVA</p><br><p>Ultra - 0x ATK, 0x DEF, 90% EVA</p><br></th>
+<th width="50%"><b><u>Dodge Roll</u></b><br><p>Normal Evade</p><br><p>I - 0x ATK, 0x DEF, 30% EVA</p><br><p>II - 0x ATK, 0x DEF, 35% EVA</p><br><p>III - 0x ATK, 0x DEF, 40% EVA</p><br><p>IV - 0x ATK, 0x DEF, 45% EVA</p><br><p>V - 0x ATK, 0x DEF, 50% EVA</p><br><p>Ultra - 0x ATK, 0x DEF, 60% EVA</p><br></th>
+</tr>
+
+<tr>
+<th colspan="2">
+<a name="Enemy_Special_Moves"></a>
+<h3><b>Special Moves</b></h3>
+<p>Moves that have various different actions</p>
+<br>
+</th>
+</tr>
+
+<tr>
+<th width="50%"><b><u>Rebuild</u></b><br><p>Colossus Phase I Special</p><br><p>I - Restore 10 HP</p><br><p>II - Restore 20 HP</p><br><p>III - Restore 30 HP</p><br><p>IV - Restore 40 HP</p><br><p>V - Restore 50 HP</p><br><p>Ultra - Restore 60 HP</p><br></th>
+<th width="50%"><b><u>Colossal Fury</u></b><br><p>Colossus Phase II Special</p><br><p>I - 3x ATK, -1x DEF</p><br><p>II - 3.1x ATK, -1x DEF</p><br><p>III - 3.2x ATK, -1x DEF</p><br><p>IV - 3.3x ATK, -1x DEF</p><br><p>V - 3.4x ATK, -1x DEF</p><br><p>Ultra - 3.6x ATK, -1x DEF</p><br></th>
+</tr>
+<tr>
+<th width="50%"><b><u>Will of The Hive</u></b><br><p>Hive Queen Phase I Special</p><br><p>I - Blind for 1 Turn</p><br><p>II - Blind for 2 Turn</p><br><p>III - Blind for 3 Turn</p><br><p>IV - Blind for 4 Turn</p><br><p>V - Blind for 5 Turn</p><br><p>Ultra - Blind for 6 Turn</p><br></th>
+<th width="50%"><b><u>Apian Rush</u></b><br><p>Hive Queen Phase II Special</p><br><p>I - </p><br><p>II - </p><br><p>III - </p><br><p>IV - </p><br><p>V - </p><br><p>Ultra - </p><br></th>
+</tr>
+<tr>
+<th width="50%"><b><u>Single Headed Bite</u></b><br><p>Hydra Phase I Special</p><br><p>I - 75% for 2x ATK, 0x DEF</p><br><p>II - 75% for 2.05x ATK, 0x DEF</p><br><p>III - 75% for 2.1x ATK, 0x DEF</p><br><p>IV - 75% for 2.15x ATK, 0x DEF</p><br><p>V - 75% for 2.2x ATK, 0x DEF</p><br><p>Ultra - 75% for 2.3x ATK, 0x DEF</p><br></th>
+<th width="50%"><b><u>Dual Headed Bite</u></b><br><p>Hydra Phase II Special</p><br><p>I - 75% for 2x ATK x2, 0x DEF</p><br><p>II - 75% for 2.05x ATK x2, 0x DEF</p><br><p>III - 75% for 2.1x ATK x2, 0x DEF</p><br><p>IV - 75% for 2.15x ATK x2, 0x DEF</p><br><p>V - 75% for 2.2x ATK x2, 0x DEF</p><br><p>Ultra - 75% for 2.3x ATK x2, 0x DEF</p><br></th>
+</tr>
+<tr>
+<th width="50%"><b><u>Five Headed Bite</u></b><br><p>Hydra Phase III Special</p><br><p>I - 75% for 2x ATK x5, 0x DEF</p><br><p>II - 75% for 2.05x ATK x5, 0x DEF</p><br><p>III - 75% for 2.1x ATK x5, 0x DEF</p><br><p>IV - 75% for 2.15x ATK x5, 0x DEF</p><br><p>V - 75% for 2.2x ATK x5, 0x DEF</p><br><p>Ultra - 75% for 2.3x ATK x5, 0x DEF</p><br></th>
+<th width="50%"><b><u>Spiderling Swarm</u></b><br><p>Arraknyd Phase I Special</p><br><p>I - 60% for 0.25x ATK [PEN] x5, 1x DEF</p><br><p>II - 65% for 0.25x ATK [PEN] x5, 1x DEF</p><br><p>III - 70% for 0.25x ATK [PEN] x5, 1x DEF</p><br><p>IV - 75% for 0.25x ATK [PEN] x5, 1x DEF</p><br><p>V - 80% for 0.25x ATK [PEN] x5, 1x DEF</p><br><p>Ultra - 90% for 0.25x ATK [PEN] x5, 1x DEF</p><br></th>
+</tr>
+<tr>
+<th width="50%"><b><u>Frigid Call</u></b><br><p>placeholder</p><br><p>I - Freeze for 2 Turns</p><br><p>II - Freeze for 3 Turns</p><br><p>III - Freeze for 4 Turns</p><br><p>IV - Freeze for 5 Turns</p><br><p>V - Freeze for 6 Turns</p><br><p>Ultra - Freeze for 7 Turns</p><br></th>
+<th width="50%"></th>
+</tr>
+</table>
+
+<a name="Dungeon"></a>
+<h2><u>The Dungeon</u></h2>
+<a name="Dungeon_Layout"></a>
+<h3><b>Layout</b></h3>
+<h5>placeholder</h5>
+
 </figure>
 </section>
 </article>
@@ -208,9 +360,9 @@
 		<label class="menu_label" for="c1"><b><p>The Explorer</p></b></label>
 		<input type="checkbox" id="c1" />
 		<ol>
-			<li class="page"><a href="#"><p>Classes</p></a></li> 
-			<li class="page"><a href="#"><p>Stats</p></a></li>
-			<li class="page"><a href="#"><p>Names and Titles</p></a></li>
+			<li class="page"><a href="#Player_Classes"><p>Classes</p></a></li> 
+			<li class="page"><a href="#Player_Stats"><p>Stats</p></a></li>
+			<li class="page"><a href="#Player_Names_Titles"><p>Names and Titles</p></a></li>
 				
 			<li>
 				<label class="menu_label" for="c2"><p>Move List</p></label>
@@ -231,15 +383,21 @@
 		<input type="checkbox" id="c3" />
 		<ol>
 			<li>
-				<li class="page"><a href="#"><p>Types</p></a></li> 
-				<li class="page"><a href="#"><p>Stats</p></a></li>
+				<li class="page"><a href="#Enemy_Types"><p>Types</p></a></li> 
+				<li class="page"><a href="#Enemy_Stats"><p>Stats</p></a></li>
 				
 				<li>
 					<label class="menu_label" for="c4"><p>Move List</p></label>
 					<input type="checkbox" id="c4" />
 					<ol>
 						<li>
-							<li class="page"><a href="#"><p>placeholder</p></a></li>
+							<li class="page"><a href="#Enemy_Melee_Attack_Moves"><p>Melee Attacks</p></a></li>
+							<li class="page"><a href="#Enemy_Melee_Neutral_Moves"><p>Melee Neutrals</p></a></li>
+							<li class="page"><a href="#Enemy_Ranged_Attack_Moves"><p>Ranged Attacks</p></a></li>
+							<li class="page"><a href="#Enemy_Ranged_Neutral_Moves"><p>Ranged Neutrals</p></a></li>
+							<li class="page"><a href="#Enemy_Defend_Moves"><p>Defends</p></a></li>
+							<li class="page"><a href="#Enemy_Evade_Moves"><p>Evades</p></a></li>
+							<li class="page"><a href="#Enemy_Special_Moves"><p>Specials</p></a></li>
 						</li>
 					</ol>
 				</li>
@@ -253,7 +411,7 @@
 		<input type="checkbox" id="c5" />
 		<ol>
 			<li>
-				<li class="page"><a href="#"><p>Format</p></a></li> 
+				<li class="page"><a href="#Dungeon_Layout"><p>Layout</p></a></li> 
 				<li class="page"><a href="#"><p>Locations</p></a></li>
 				<li class="page"><a href="#"><p>Encounter List</p></a></li>
 			</li>
@@ -266,7 +424,7 @@
 		<ol>
 			<li>
 				<li class="page"><a href="#"><p>Equipment Types</p></a></li>
-				<li class="page"><a href="#"><p>Stats, Modifications, and Tiers</p></a></li>
+				<li class="page"><a href="#"><p>Stats, Mod, and Tiers</p></a></li>
 				<li class="page"><a href="#"><p>Locations</p></a></li>
 			</li>
         </ol>
