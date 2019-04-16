@@ -2,8 +2,10 @@
 <html>
 <head>
 <title>Release Log - Rogue-likebot 1980 - Logarathon1's Epic Website</title>
-<link rel="stylesheet" href="https://logarathon1.github.io/styles.css">
+<link href="treemenu.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 <link rel="icon" href="https://logarathon1.github.io/Images/site-icon.png">
+<link href="treemenu.css" rel="stylesheet">
 </head>
 <body>
 <div class = "wrapper">
@@ -23,117 +25,51 @@
 <section class = "text2">
 <article>
 <figure>
-<h2><u>[WIP] Rogue-likebot 1980 v1.2.x Guide [WIP]</u></h2>
+<h2><u>[WIP] Rogue-likebot 1980 v1.3 Guide [WIP]</u></h2>
 <p>Last Updated 06/04/2019</p>
 <h3><b>Summary</b></h3>
 <h4>This section of the website will be where the official Rogue-likebot 1980 Guide will be. The Guide will contain some documentation of the bot's functions and act as a reference for the game</h4>
-<h3><b>Contents</b></h3>
-<ol>
-<li><span>The Explorer</span></li>
-<ul>
-<li>Classes</li>
-<li>Stats</li>
-<li>Names and Titles</li>
-</ul>
 
-<li><span>Enemies</span></li>
-<ul>
-<li>Types</li>
-<li>Stats</li>
-</ul>
-
-<li><span>The Dungeon</span></li>
-<ul>
-<li>Format</li>
-<li>Locations</li>
-</ul>
-
-<li><span>Combat</span></li>
-<ul>
-<li>Combat Order</li>
-<li>Player Move Types</li>
-<li>Enemy Move Types</li>
-</ul>
-
-<li><span>Encounters</span></li>
-<ul>
-<li>List</li>
-</ul>
-
-<li><span>Equipment</span></li>
-<ul>
-<li>Types</li>
-<li>Stats</li>
-<li>Modifications</li>
-</ul>
-
-<li><span><a href="#pmoves">Full Player Move List</a></span></li>
-<ul>
-<li><a href="#shortmoves">Short Weapon Moves</a></li>
-<li><a href="#longmoves">Long Weapon Moves</a></li>
-<li><a href="#rangedmoves">Ranged Weapon Moves</a></li>
-<li><a href="#unarmedmoves">Unarmed Weapon Moves</a></li>
-<li><a href="#classmoves">Special Class Moves</a></li>
-</ul>
-
-<li><span>Full Enemy Move List</span></li>
-<ul>
-<li>Standard Moves</li>
-<li>Boss Moves</li>
-</ul>
-
-</ol>
-<br>
-</figure>
-</hgroup>
-</article>
-</section>
-
-<aside>
-<section class = "about">
-<h2>Useful Links</h2>
-<p><a href = "https://www.facebook.com/pg/roguelikebot1980">Facebook Page</a></p>
-<p><a href = "https://botappreciationsociety.fandom.com/wiki/Rogue-likebot_1980">BAS Wiki Page</a></p>
-<p><a href = "https://logarathon1.github.io/rogue-likebot1980/release-log">Release Log</a></p>
-<p><a href = "https://logarathon1.github.io/rogue-likebot1980/guide">Guide</a></p>
-</section>
-</aside>
-
-<article>
-<section class = "text">
-<figure>
 <h2><u>The Explorer</u></h2>
 <h3><b>Classes</b></h3>
+<h5>As of v1.3, there are six different classes available, with a selection of three being generated at the start of the game. Each class starts with different equipment, stats, and a unique passive ability and active move.</h5>
 
 <table>
 <tr>
-<th width="50%"><b><u>The Warrior</u></b><br><p>placeholder</p><br><p>Health - 80HP</p><br><p>Attack - 8 ATK (2 Base, 6 Equip)</p><br><p>Defense - 8 DEF (4 Base, 4 Equip)</p><br><p><u>Passive Ability: Executioner</u></p><br><p>Deal 50% more attack if the enemy is under 20% Health</p><br><u><p>Active Ability: Fury</p></u><br><p>Unlocks Vicious Slash while using a Short-type + Two-Handed Weapon</p><br></th>
-<th width="50%"><b><u>The Rogue</u></b><br><p>placeholder</p><br><p>Health - 70HP</p><br><p>Attack - 10 ATK (2 Base, 8 Equip)</p><br><p>Defense - 5 DEF (1 Base, 4 Equip)</p><br><p><u>Passive Ability: Master of Knives</u></p><br><p>Newly generated knives and daggers have +2 ATK</p><br><u><p>Active Ability: Shadow Slasher</p></u><br><p>Unlocks Backstab while using a Short-type + One-Handed Weapon</p><br></th>
+<th width="50%"><b><u>The Warrior</u></b><br><p>placeholder</p><br><p>Health - 80HP</p><br><p>Attack - 8 ATK (2 Core, 6 Bonus)</p><br><p>Defense - 8 DEF (4 Core, 4 Bonus)</p><br><p><u>Passive Ability: Executioner</u></p><br><p>Deal 50% more attack if the enemy is under 20% Health</p><br><u><p>Active Ability: Fury</p></u><br><p>Unlocks Vicious Slash while using a Short-type + Two-Handed Weapon</p><br></th>
+<th width="50%"><b><u>The Rogue</u></b><br><p>placeholder</p><br><p>Health - 70HP</p><br><p>Attack - 10 ATK (2 Core, 8 Bonus)</p><br><p>Defense - 5 DEF (1 Core, 4 Bonus)</p><br><p><u>Passive Ability: Master of Knives</u></p><br><p>Newly generated knives and daggers have +2 ATK</p><br><u><p>Active Ability: Shadow Slasher</p></u><br><p>Unlocks Backstab while using a Short-type + One-Handed Weapon</p><br></th>
 </tr>
 <tr>
-<th width="50%"><b><u>The Paladin</u></b><br><p>placeholder</p><br><p>Health - 100HP</p><br><p>Attack - 5 ATK (3 Base, 2 Equip)</p><br><p>Defense - 10 DEF (6 Base, 4 Equip)</p><br><p><u>Passive Ability: Wall of Thorns</u></p><br><p>25% of blocked damage is reflected back</p><br><u><p>Active Ability: Unbreakable</p></u><br><p>Unlocks Steady Block while using a Shield</p><br></th>
-<th width="50%"><b><u>The Hunter</u></b><br><p>placeholder</p><br><p>Health - 65HP</p><br><p>Attack - 9 ATK (3 Base, 6 Equip)</p><br><p>Defense - 6 DEF (2 Base, 4 Equip)</p><br><p><u>Passive Ability: Dead-eye</u></p><br><p>Steady Shots now have a 95% chance to hit</p><br><u><p>Active Ability: Arrowstorm</p></u><br><p>Unlocks Volley while using a Ranged-type Weapon</p><br></th>
+<th width="50%"><b><u>The Paladin</u></b><br><p>placeholder</p><br><p>Health - 100HP</p><br><p>Attack - 5 ATK (3 Core, 2 Bonus)</p><br><p>Defense - 10 DEF (6 Core, 4 Bonus)</p><br><p><u>Passive Ability: Wall of Thorns</u></p><br><p>25% of blocked damage is reflected back</p><br><u><p>Active Ability: Unbreakable</p></u><br><p>Unlocks Steady Block while using a Shield</p><br></th>
+<th width="50%"><b><u>The Hunter</u></b><br><p>placeholder</p><br><p>Health - 65HP</p><br><p>Attack - 9 ATK (3 Core, 6 Bonus)</p><br><p>Defense - 6 DEF (2 Core, 4 Bonus)</p><br><p><u>Passive Ability: Dead-eye</u></p><br><p>Steady Shots now have a 95% chance to hit</p><br><u><p>Active Ability: Arrowstorm</p></u><br><p>Unlocks Volley while using a Ranged-type Weapon</p><br></th>
 </tr>
 <tr>
-<th width="50%"><b><u>The Lancer</u></b><br><p>placeholder</p><br><p>Health - 75HP</p><br><p>Attack - 6 ATK (3 Base, 3 Equip)</p><br><p>Defense - 9 DEF (2 Base, 7 Equip)</p><br><p><u>Passive Ability: Polearm Expert</u></p><br><p>Newly generated Long-type Weapons have +2 DEF</p><br><u><p>Active Ability: Formation</p></u><br><p>Unlocks Guarded Slice while using a Long-type Weapon</p><br></th>
-<th width="50%"><b><u>The Brawler</u></b><br><p>placeholder</p><br><p>Health - 90HP</p><br><p>Attack - 4 ATK (4 Base, 0 Equip)</p><br><p>Defense - 4 DEF (0 Base, 4 Equip)</p><br><p><u>Passive Ability: Bare-Knuckle</u></p><br><p>Deal an extra 5 Damage while using only Unarmed-type Weapons</p><br><u><p>Active Ability: Fists Of Fury</p></u><br><p>Unlocks Rough Tussle while using an Unarmed-type Weapon</p><br></th>
+<th width="50%"><b><u>The Lancer</u></b><br><p>placeholder</p><br><p>Health - 75HP</p><br><p>Attack - 6 ATK (3 Core, 3 Bonus)</p><br><p>Defense - 9 DEF (2 Core, 7 Bonus)</p><br><p><u>Passive Ability: Polearm Expert</u></p><br><p>Newly generated Long-type Weapons have +2 DEF</p><br><u><p>Active Ability: Formation</p></u><br><p>Unlocks Guarded Slice while using a Long-type Weapon</p><br></th>
+<th width="50%"><b><u>The Brawler</u></b><br><p>placeholder</p><br><p>Health - 90HP</p><br><p>Attack - 4 ATK (4 Core, 0 Bonus)</p><br><p>Defense - 4 DEF (0 Core, 4 Bonus)</p><br><p><u>Passive Ability: Bare-Knuckle</u></p><br><p>Deal an extra 5 Damage while using only Unarmed-type Weapons</p><br><u><p>Active Ability: Fists Of Fury</p></u><br><p>Unlocks Rough Tussle while using an Unarmed-type Weapon</p><br></th>
 </tr>
 </table>
 
-</figure>
-</section>
-</article>
+<h3><b>Stats</b></h3>
+<h5>Each Explorer has three main stats: Health (HP - dictates how much damage the Explorer can sustain before dying), Attack (ATK - how much damage the Explorer can deal), and Defense (DEF - how much damage the Explorer can block)</h5>
+<h5>These stats consist of two seperate stats - a Core Stat and a Bonus Stat. The Core Stat comes from the Explorer's class and can only be changed via levelling up and some encounters, whereas the Bonus Stat comes from the Explorer's equipment and can be changed via upgrading or equipping new gear.</h5>
 
-<article>
-<section class = "text">
-<figure>
-<a name="playermoves"></a>
-<h2><u>Player Moves</u></h2>
-<a name="shortmoves"></a>
+<h3><b>Names and Titles</b></h3>
+<h5>Explorers are given names at the start of the Run, as well as a title that changes based on how far through The Dungeon they are.</h5>
+<h5>Explorer Names are taken from a name pool that is populated by a few generic names alongside many user-submitted names. To submit a name <a href = "https://discord.gg/mJURtpv">join The Bot Appreciation Society Discord Server</a>, go to the #play-with-bots channel, and type "rpg!submit [enter name here]" without quotations or brackets. You should receive a confirmation message from RPGBot, but if not tag me (@Logarathon) and I'll sort it out.</h5>
+<h5>Explorer Titles are suffixes to the Explorer's name that change based on how many Dungeon Stages the Explorer has completed.</h5>
+
+<a name="Player_Moves"></a>
+<h2>Player Moves</h2>
+<table>
+<tr>
+<th colspan="2">
+<a name="Short_Moves"></a>
 <h3><b>Short-type Weapon Moves</b></h3>
 <p>Moves that are unlocked via Short-type Weapons</p>
 <br>
-<table>
+</th>
+</tr>
+
 <tr>
 <th width="50%"><b><u>Hard Swing - Slot 1</u></b><br><p>Attack Move</p><br><p>I - 1.5x ATK, 0x DEF</p><br><p>II - 1.55x ATK, 0x DEF</p><br><p>III - 1.6x ATK, 0x DEF</p><br><p>IV - 1.65x ATK, 0x DEF</p><br><p>V - 1.7x ATK, 0x DEF</p><br><p>Ultra - 1.8x ATK, 0x DEF</p><br></th>
 <th width="50%"><b><u>Balanced Strike - Slot 2</u></b><br><p>Neutral Move</p><br><p>I - 1x ATK, 1x DEF</p><br><p>II - 1.05x ATK, 1.05x DEF</p><br><p>III - 1.1x ATK, 1.1x DEF</p><br><p>IV - 1.15x ATK, 1.15x DEF</p><br><p>V - 1.2x ATK, 1.2x DEF</p><br><p>Ultra - 1.3x ATK, 1.3x DEF</p><br></th>
@@ -142,13 +78,16 @@
 <th width="50%"><b><u>Deflective Parry - Slot 3</u></b><br><p>Defense Move</p><br><p>I - 0x ATK, 1.5x DEF</p><br><p>II - 0x ATK, 1.55x DEF</p><br><p>III - 0x ATK, 1.6x DEF</p><br><p>IV - 0x ATK, 1.65x DEF</p><br><p>V - 0x ATK, 1.7x DEF</p><br><p>Ultra - 0x ATK, 1.8x DEF</p><br></th>
 <th width="50%"><b><u>Dodge Roll - Slot 4</u></b><br><p>Evasive Move</p><br><p>I - 0x ATK, 0x DEF, 50% EVA</p><br><p>II - 0x ATK, 0x DEF, 52% EVA</p><br><p>III - 0x ATK, 0x DEF, 54% EVA</p><br><p>IV - 0x ATK, 0x DEF, 56% EVA</p><br><p>V - 0x ATK, 0x DEF, 58% EVA</p><br><p>Ultra - 0x ATK, 0x DEF, 60% EVA</p><br></th>
 </tr>
-</table>
 
-<a name="longmoves"></a>
+<tr>
+<th colspan="2">
+<a name="Long_Moves"></a>
 <h3><b>Long-type Weapon Moves</b></h3>
 <p>Moves that are unlocked via Long-type Weapons</p>
 <br>
-<table>
+</th>
+</tr>
+
 <tr>
 <th width="50%"><b><u>Hard Thrust - Slot 1</u></b><br><p>Attack Move</p><br><p>I - 1.5x ATK [PEN], 0x DEF</p><br><p>II - 1.55x ATK [PEN], 0x DEF</p><br><p>III - 1.6x ATK [PEN], 0x DEF</p><br><p>IV - 1.65x ATK [PEN], 0x DEF</p><br><p>V - 1.7x ATK [PEN], 0x DEF</p><br><p>Ultra - 1.8x ATK [PEN], 0x DEF</p><br></th>
 <th width="50%"><b><u>Balanced Stab - Slot 2</u></b><br><p>Neutral Move</p><br><p>I - 1x ATK, 1x DEF</p><br><p>II - 1.05x ATK, 1.05x DEF</p><br><p>III - 1.1x ATK, 1.1x DEF</p><br><p>IV - 1.15x ATK, 1.15x DEF</p><br><p>V - 1.2x ATK, 1.2x DEF</p><br><p>Ultra - 1.3x ATK, 1.3x DEF</p><br></th>
@@ -157,13 +96,16 @@
 <th width="50%"><b><u>Side Swing - Slot 3</u></b><br><p>Defense Move</p><br><p>I - 0x ATK, 1.25x DEF</p><br><p>II - 0x ATK, 1.3x DEF</p><br><p>III - 0x ATK, 1.35x DEF</p><br><p>IV - 0x ATK, 1.4x DEF</p><br><p>V - 0x ATK, 1.45x DEF</p><br><p>Ultra - 0x ATK, 1.55x DEF</p><br></th>
 <th width="50%"><b><u>Feint Lunge - Slot 4</u></b><br><p>Evasive Move</p><br><p>I - 0x ATK, 0x DEF, 50% EVA</p><br><p>II - 0x ATK, 0x DEF, 52% EVA</p><br><p>III - 0x ATK, 0x DEF, 54% EVA</p><br><p>IV - 0x ATK, 0x DEF, 56% EVA</p><br><p>V - 0x ATK, 0x DEF, 58% EVA</p><br><p>Ultra - 0x ATK, 0x DEF, 60% EVA</p><br></th>
 </tr>
-</table>
 
-<a name="rangedmoves"></a>
+<tr>
+<th colspan="2">
+<a name="Ranged_Moves"></a>
 <h3><b>Ranged-type Weapon Moves</b></h3>
 <p>Moves that are unlocked via Ranged-type Weapons</p>
 <br>
-<table>
+</th>
+</tr>
+
 <tr>
 <th width="50%"><b><u>Aimed Shot - Slot 1</u></b><br><p>Attack Move</p><br><p>I - 66% for 1.25x ATK [PEN], 0x DEF</p><br><p>II - 66% for 1.3x ATK [PEN], 0x DEF</p><br><p>III - 66% for 1.35x ATK [PEN], 0x DEF</p><br><p>IV - 66% for 1.4x ATK [PEN], 0x DEF</p><br><p>V - 66% for 1.45x ATK [PEN], 0x DEF</p><br><p>Ultra - 66% for 1.55x ATK [PEN], 0x DEF</p><br></th>
 <th width="50%"><b><u>Steady Shot - Slot 2</u></b><br><p>Neutral Move</p><br><p>I - 80% for 1x ATK, 0.75x DEF</p><br><p>II - 80% for 1.05x ATK, 0.8x DEF</p><br><p>III - 80% for 1.1x ATK, 0.85x DEF</p><br><p>IV - 80% for 1.15x ATK, 0.9x DEF</p><br><p>V - 80% for 1.2x ATK, 0.95x DEF</p><br><p>Ultra - 80% for 1.3x ATK, 1x DEF</p><br></th>
@@ -172,13 +114,16 @@
 <th width="50%"><b><u>Fleeting Cover - Slot 3</u></b><br><p>Defense Move</p><br><p>I - 0x ATK, 1.25x DEF</p><br><p>II - 0x ATK, 1.3x DEF</p><br><p>III - 0x ATK, 1.35x DEF</p><br><p>IV - 0x ATK, 1.4x DEF</p><br><p>V - 0x ATK, 1.45x DEF</p><br><p>Ultra - 0x ATK, 1.55x DEF</p><br></th>
 <th width="50%"><b><u>Quick Dodge - Slot 4</u></b><br><p>Evasive Move</p><br><p>I - 0x ATK, 0x DEF, 50% EVA</p><br><p>II - 0x ATK, 0x DEF, 52% EVA</p><br><p>III - 0x ATK, 0x DEF, 54% EVA</p><br><p>IV - 0x ATK, 0x DEF, 56% EVA</p><br><p>V - 0x ATK, 0x DEF, 58% EVA</p><br><p>Ultra - 0x ATK, 0x DEF, 60% EVA</p><br></th>
 </tr>
-</table>
 
-<a name="unarmedmoves"></a>
+<tr>
+<th colspan="2">
+<a name="Unarmed_Moves"></a>
 <h3><b>Unarmed-type Weapon Moves</b></h3>
 <p>Moves that are unlocked via Unarmed-type Weapons</p>
 <br>
-<table>
+</th>
+</tr>
+
 <tr>
 <th width="50%"><b><u>Heavy Punch - Slot 1</u></b><br><p>Attack Move</p><br><p>I - 1.5x ATK [PEN], 0x DEF, 25% EVA</p><br><p>II - 1.55x ATK [PEN], 0x DEF, 25% EVA</p><br><p>III - 1.6x ATK [PEN], 0x DEF, 25% EVA</p><br><p>IV - 1.65x ATK [PEN], 0x DEF, 25% EVA</p><br><p>V - 1.7x ATK [PEN], 0x DEF, 25% EVA</p><br><p>Ultra - 1.8x ATK [PEN], 0x DEF, 25% EVA</p><br></th>
 <th width="50%"><b><u>Strong Grapple - Slot 2</u></b><p>Neutral Move</p><br><br><p>I - 1x ATK, 0.75x DEF, 50% EVA</p><br><p>II - 1.05x ATK, 0.8x DEF, 50% EVA</p><br><p>III - 1.1x ATK, 0.85x DEF, 50% EVA</p><br><p>IV - 1.15x ATK, 0.9x DEF, 50% EVA</p><br><p>V - 1.2x ATK, 0.95x DEF, 50% EVA</p><br><p>Ultra - 1.3x ATK, 1x DEF, 50% EVA</p><br></th>
@@ -187,13 +132,15 @@
 <th width="50%"><b><u>Hard Block - Slot 3</u></b><br><p>Defense Move</p><br><p>I - 0x ATK, 1.5x DEF</p><br><p>II - 0x ATK, 1.55x DEF</p><br><p>III - 0x ATK, 1.6x DEF</p><br><p>IV - 0x ATK, 1.65x DEF</p><br><p>V - 0x ATK, 1.7x DEF</p><br><p>Ultra - 0x ATK, 1.8x DEF</p><br></th>
 <th width="50%"><b><u>Side Spin - Slot 4</u></b><br><p>Evasive Move</p><br><p>I - 0x ATK, 0x DEF, 66% EVA</p><br><p>II - 0x ATK, 0x DEF, 68% EVA</p><br><p>III - 0x ATK, 0x DEF, 70% EVA</p><br><p>IV - 0x ATK, 0x DEF, 72% EVA</p><br><p>V - 0x ATK, 0x DEF, 74% EVA</p><br><p>Ultra - 0x ATK, 0x DEF, 76% EVA</p><br></th>
 </tr>
-</table>
 
-<a name="classmoves"></a>
+<a name="Class_Moves"></a>
+<tr>
+<th colspan="2">
 <h3><b>Special Class Moves</b></h3>
 <p>Moves that are unique to the stated class (unless they are learnt via encounter)</p>
 <br>
-<table>
+</th>
+</tr>
 <tr>
 <th width="50%"><b><u>Vicious Slash - Slot 1</u></b><br><p>Warrior Class Move</p><br><p>I - 2x ATK, 0x DEF</p><br><p>II - 2.05x ATK, 0x DEF</p><br><p>III - 2.1x ATK, 0x DEF</p><br><p>IV - 2.15x ATK, 0x DEF</p><br><p>V - 2.2x ATK, 0x DEF</p><br><p>Ultra - 2.3x ATK, 0x DEF</p><br></th>
 <th width="50%"><b><u>Backstab - Slot 4</u></b><br><p>Rogue Class Move</p><br><p>I - 50% 1x ATK [PEN] EVA</p><br><p>II - 50% 1.05x ATK [PEN] EVA</p><br><p>III - 50% 1.1x ATK [PEN] EVA</p><br><p>IV - 50% 1.15x ATK [PEN] EVA</p><br><p>V - 50% 1.2x ATK [PEN] EVA</p><br><p>Ultra - 50% 1.3x ATK [PEN] EVA</p><br></th>
@@ -208,10 +155,125 @@
 </tr>
 </table>
 
+<br>
+
+<h2><u>Enemies</u></h2>
+<h3><b>Types</b></h3>
+<h5>As of v1.3, there are three main types of enemies - Standard, Mini Boss, and Boss - and nine sub-types - Explorer, Fallen, Ethereal, Flying, Small, Big, Mounted, Armoured, and Burrowing. While an enemy can only belong to one of the main types, they may have any combination of up to two sub-types, such as a Small and Ethereal Standard-type Enemy, or a Mounted Flying Boss. The main types affect the enemy's main stats upon generation, while the sub-types can have various effects.</h5>
+
+<table>
+<tr>
+<th colspan="3"><b><u>Main Types</u></b></th>
+</tr>
+<tr>
+<th width="33%"><b><u>Boss</u></b><br><p>Rare Main Type</p><br><p>Much Higher HP</p><br><p>Higher ATK</p><br><p>Higher DEF</p><br><p>Only spawns at the end of each Stage</p><br></th>
+<th width="34%"><b><u>Mini Boss</u></b><br><p>Uncommon Main Type</p><br><p>Higher HP</p><br><p>Somewhat Higher ATK</p><br><p>Somewhat Higher DEF</p><br><p>Spawns via some encounters</p><br></th>
+<th width="33%"><b><u>Standard</u></b><br><p>Common Main Type</p><br><p>Standard HP</p><br><p>Standard ATK</p><br><p>Standard DEF</p><br><p>Spawns via general enemy encounters</p><br></th>
+</tr>
+<tr>
+<th colspan="3"><b><u>Sub-types</u></b></th>
+</tr>
+<tr>
+<th width="33%"><b><u>Explorer</u></b><br><p>Uncommon Sub-type</p><br><p>Can use a specified Explorer Class Passive Ability and Active Move</p><br></th>
+<th width="34%"><b><u>Fallen</u></b><br><p>Rare Sub-type</p><br><p>Resistant to Poison, Shock, and Decay, Blaze is 2x as effective</p><br></th>
+<th width="33%"><b><u>Ethereal</u></b><br><p>Rare-Uncommon Sub-type</p><br><p>0.25x All Damage</p><br></th>
+</tr>
+<tr>
+<th width="33%"><b><u>Flying</u></b><br><p>Uncommon Sub-type</p><br><p>0.5x Unarmed Damage, 0.75x Short Damage, 1x Long Damage, 1.5x Ranged Damage</p><br></th>
+<th width="34%"><b><u>Small</u></b><br><p>Common Sub-type</p><br><p>2x chance to evade chance, 25% chance to evade regardless, deals 0.75x Damage</p><br></th>
+<th width="33%"><b><u>Big</u></b><br><p>Common Sub-type</p><br><p>0.5x chance to evade chance, deals 1.25x Damage</p><br></th>
+</tr>
+<tr>
+<th width="33%"><b><u>Mounted</u></b><br><p>Rare Sub-type</p><br><p>1.25x Long Damage, always moves first</p><br></th>
+<th width="34%"><b><u>Armoured</u></b><br><p>Rare-Uncommon Sub-type</p><br><p>0.25x Ranged and Unarmed Damage</p><br></th>
+<th width="33%"><b><u>Burrowing</u></b><br><p>Rare Sub-type</p><br><p>Can only be damaged if attacking</p><br></th>
+</tr>
+</table>
 
 </figure>
 </section>
 </article>
+
+<aside>
+<section class = "about">
+<h2>Useful Links</h2>
+<p><a href = "https://www.facebook.com/pg/roguelikebot1980">Facebook Page</a></p>
+<p><a href = "https://botappreciationsociety.fandom.com/wiki/Rogue-likebot_1980">BAS Wiki Page</a></p>
+<p><a href = "https://logarathon1.github.io/rogue-likebot1980/release-log">Release Log</a></p>
+<p><a href = "https://logarathon1.github.io/rogue-likebot1980/guide">Guide</a></p>
+
+<h2>Contents</h2>
+<ol id="menutree">
+	<li>
+		<label class="menu_label" for="c1"><b><p>The Explorer</p></b></label>
+		<input type="checkbox" id="c1" />
+		<ol>
+			<li class="page"><a href="#"><p>Classes</p></a></li> 
+			<li class="page"><a href="#"><p>Stats</p></a></li>
+			<li class="page"><a href="#"><p>Names and Titles</p></a></li>
+				
+			<li>
+				<label class="menu_label" for="c2"><p>Move List</p></label>
+				<input type="checkbox" id="c2" />
+				<ol>
+					<li class="page"><a href="#Short_Moves"><p>Short Weapons</p></a></li> 
+					<li class="page"><a href="#Long_Moves"><p>Long Weapons</p></a></li>
+					<li class="page"><a href="#Ranged_Moves"><p>Ranged Weapons</p></a></li>
+					<li class="page"><a href="#Unarmed_Moves"><p>Unarmed Weapons</p></a></li>
+					<li class="page"><a href="#Class_Moves"><p>Class Moves</p></a></li>
+				</ol>
+			</li>
+        </ol>
+	</li>
+	
+	<li>
+		<label class="menu_label" for="c3"><p><b>Enemies</b></p></label>
+		<input type="checkbox" id="c3" />
+		<ol>
+			<li>
+				<li class="page"><a href="#"><p>Types</p></a></li> 
+				<li class="page"><a href="#"><p>Stats</p></a></li>
+				
+				<li>
+					<label class="menu_label" for="c4"><p>Move List</p></label>
+					<input type="checkbox" id="c4" />
+					<ol>
+						<li>
+							<li class="page"><a href="#"><p>placeholder</p></a></li>
+						</li>
+					</ol>
+				</li>
+				
+			</li>
+        </ol>
+	</li>
+	
+	<li>
+		<label class="menu_label" for="c5"><p><b>The Dungeon</b></p></label>
+		<input type="checkbox" id="c5" />
+		<ol>
+			<li>
+				<li class="page"><a href="#"><p>Format</p></a></li> 
+				<li class="page"><a href="#"><p>Locations</p></a></li>
+				<li class="page"><a href="#"><p>Encounter List</p></a></li>
+			</li>
+        </ol>
+	</li>
+	
+	<li>
+		<label class="menu_label" for="c6"><p><b>Equipment and Loot</b></p></label>
+		<input type="checkbox" id="c6" />
+		<ol>
+			<li>
+				<li class="page"><a href="#"><p>Equipment Types</p></a></li>
+				<li class="page"><a href="#"><p>Stats, Modifications, and Tiers</p></a></li>
+				<li class="page"><a href="#"><p>Locations</p></a></li>
+			</li>
+        </ol>
+	</li>
+</ol>
+</section>
+</aside>
 
 <footer>
 <p>&copy; 2019, Logan Fincham<p>
