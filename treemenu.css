@@ -1,9 +1,37 @@
 /* Minimal css for clickable pure CSS collapsible tree menu */
 /* As specific as possible to prevent interference with other code */
 
+#menutree{
+margin-top: 0px;
+padding-left: 0px;
+text-align: center;}
+
+#menutree ol{
+margin: 5px;
+margin-top: -25px;
+padding-left: 0px;
+padding-right: 0px;
+text-align: center;
+}
+
+#menutree b{
+	text-align: center;
+}
+
 #menutree li {
    list-style: none;          /* all list item li dots invisible */
-         }
+   text-align: center;
+}
+
+#menutree p:hover{
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+label input[type=checkbox]:checked + label
+{
+background: #2d2d2d;
+}	
 
    li .menu_label + input[type=checkbox] {
       opacity: 0;             /* checkboxes invisible and use no space */
@@ -22,3 +50,6 @@
          {
            display: block;         /* display submenu on click */
          }
+
+	   
+		 
