@@ -5,7 +5,7 @@ table img{
 	height:151px;
 }
 
-table img:hover{
+table a img:hover{
 	padding: 0px; 
 	width: 175px;
 	height:175px;
