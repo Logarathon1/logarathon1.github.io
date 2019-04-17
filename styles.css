@@ -8,7 +8,7 @@ line height: 1.4em;
 margin: opx;}
 
 .wrapper{
-width: 940px;
+width: 1200px;
 margin: 20px auto 20px auto;
 border: 2px solid #000000;
 background-color: #313131;}
@@ -18,7 +18,7 @@ height: 160px;
 background-image: url("Images/banner.png");}
 h1{
 text-indent: -9999px;
-width: 940px;
+width: 1200px;
 height: 160px;
 margin: 0px;}
 
@@ -48,21 +48,21 @@ margin-left: -22px;}
 
 section.imagewithtext{
 float: left;
-width: 599px;
+width: 859px;
 margin: 30px;
 margin-top: 60px;
 border: 1px solid #888888;}
 
 section.text2{
 float: left;
-width: 645px;
+width: 905px;
 margin-top: 60px;
 margin-left: 10px;
 border-right: 5px solid #232323;}
 
 section.text{
 float: left;
-width: 645px;
+width: 905px;
 margin-left: 10px;
 border-right: 5px solid #232323;}
 
@@ -102,7 +102,7 @@ height: 220px;
 
 section.text figure,section.text2 figure{
 float: left;
-width: 575px;
+width: 835px;
 padding: 5px;
 padding-left: 20px;
 margin: 20px;
