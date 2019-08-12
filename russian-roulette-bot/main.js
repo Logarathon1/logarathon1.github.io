@@ -10,7 +10,6 @@ function AJAX_JSON_Req( url )
         if( AJAX_req.readyState == 4 && AJAX_req.status == 200 )
         {
             var response = JSON.parse( AJAX_req.responseText );
-            document.write( response.name );
         }
     }
     AJAX_req.send();
