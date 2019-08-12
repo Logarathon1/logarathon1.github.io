@@ -37,3 +37,4 @@ function populateLeaderboard () {
 		table.rows[i].cells[2].innerHTML = "<b>" + notShotThisWeek[i-2].name + "</b><br><p>Not Shot " + notShotThisWeek[i-2].score + " Times</p><br>";
 	}
 }
+//h
