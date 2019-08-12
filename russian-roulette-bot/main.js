@@ -19,10 +19,18 @@ function AJAX_JSON_Req( url )
 
 
 function populateLeaderboard () {
-	var shotAllTime = JSON.parse(AJAX_JSON_Req( 'https://logarathon1.github.io/russian-roulette-bot/leaderboards/all-time/shot/current.json' ););
-	var notShotAllTime = JSON.parse(AJAX_JSON_Req( 'https://logarathon1.github.io/russian-roulette-bot/leaderboards/all-time/not-shot/current.json' ););
-	var shotThisWeek = JSON.parse(AJAX_JSON_Req( 'https://logarathon1.github.io/russian-roulette-bot/leaderboards/weekly/shot/current.json' ););
-	var notShotThisWeek = JSON.parse(AJAX_JSON_Req( 'https://logarathon1.github.io/russian-roulette-bot/leaderboards/weekly/not-shot/current.json' ););
+	AJAX_JSON_Req('https://logarathon1.github.io/russian-roulette-bot/leaderboards/all-time/shot/current.json');
+	var shotAllTime = JSON.parse(AJAX_req.responseText);
+	
+	AJAX_JSON_Req('https://logarathon1.github.io/russian-roulette-bot/leaderboards/all-time/not-shot/current.json');
+	var notShotAllTime = JSON.parse(AJAX_req.responseText);
+	
+	AJAX_JSON_Req('https://logarathon1.github.io/russian-roulette-bot/leaderboards/weekly/shot/current.json');
+	var shotThisWeek = JSON.parse(AJAX_req.responseText);
+	
+	AJAX_JSON_Req('https://logarathon1.github.io/russian-roulette-bot/leaderboards/weekly/not-shot/current.json');
+	var notShotThisWeek = JSON.parse(AJAX_req.responseText);
+	
 	var table = document.getElementById("table");
 	for(i = 2; i < table.rows.length; i++) {
 		table.rows[i].cells[3].innerHTML = "<b>" + shotAllTime[i-2].name + "</b><br><p>Shot " + shotAllTime[i-2].score + " Times</p><br>";
