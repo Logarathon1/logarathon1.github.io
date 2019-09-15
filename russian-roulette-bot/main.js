@@ -6,7 +6,7 @@ function populateLeaderboard () {
 	var notShotThisWeek = [{"startDate":"08-09-2019","endDate":"15-09-2019"},{"name":"Lucas Blazkowicz","score":33},{"name":"Carlo Sabatino Errichiello","score":31},{"name":"Alejandro Londoño Marín","score":23},{"name":"Matheus Buonani de la Silva","score":23},{"name":"Pedro Quinellato Dutra Vieira","score":23},{"name":"Christian Bebel II","score":22},{"name":"James Smith","score":19},{"name":"Nay Poe","score":18},{"name":"Tomasz Mayer","score":15},{"name":"Guille Osses","score":14},{"name":"Conor Gorman","score":13},{"name":"Justin Chiang","score":13},{"name":"Josh Vickers","score":12},{"name":"Liard Stojić","score":10},{"name":"Alan Cabrera","score":10},{"name":"Pancho Saavedra","score":9},{"name":"Levente Göröcs","score":9},{"name":"Nawel Larrosa","score":9},{"name":"Casten Jamie Johnson","score":8},{"name":"Otávio Quinellato","score":7}]
 	var table = document.getElementById("table");
 	table.rows[0].cells[0].innerHTML = "<h3><b>Last Week's Leaderboard</b></h3><p>" + shotThisWeek[0].startDate + " - " + shotThisWeek[0].endDate + "</p>"
-	table.rows[0].cells[1].innerHTML = "<h3><b>All Time Leaderboard</b></h3><p>Updated " + shotThisWeek.endDate + "</p>"
+	table.rows[0].cells[1].innerHTML = "<h3><b>All Time Leaderboard</b></h3><p>Updated " + shotThisWeek[0].endDate + "</p>"
 	for(i = 2; i < table.rows.length; i++) {
 		table.rows[i].cells[3].innerHTML = "<b>" + shotAllTime[i-1].name + "</b><br><p>Shot " + shotAllTime[i-1].score + " Times</p><br>";
 	}
