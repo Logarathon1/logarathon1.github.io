@@ -24,6 +24,127 @@
 <section class = "text2">
 <article>
 <figure>
+<h2><u>Rogue-likebot 1980 v1.3 Details</u></h2>
+<p>05/12/2019</p>
+<h4>This update focuses on updating combat to make it more diverse, as well as implementing framework for further improvements.</h4>
+<h3><b>Improved Combat</b></h3>
+<h4>Enemies</h4>
+<ul>
+<li>Enemies now use a combat system allowing each different type of enemy to have a different set of attacks</li>
+<li>Enemies can now evade and use ranged attacks</li>
+<li>Stage Bosses and some Mini-Bosses now have different "Phases" triggered how much damage the player has dealt</li>
+<li><i>Upon changing phase bosses will get a new set of moves, more powerful and sometimes completely different to the previous</i></li>
+<li>Enemies now have a 10% chance to inflict a critical hit (x2 Damage) from all moves that deal damage</li>
+<li>Enemies now have different types assigned to them (such as undead, flying, ethereal, etc.) that affects how much damage the player does towards them</li>
+<li>Enemies and bosses can now spawn with special prefixes</li>
+<li><i>Currently these prefixes allow enemies to inflict a specific status effect upon the player if an attack is successful, but this will be reworked in a future update</i></li>
+</ul>
+<h4>The Explorer</h4>
+<ul>
+<li>The Explorer now has a secondary weapon and offhand slot, allowing them to carry additional weapons</li>
+<li>Explorers now have a 10% chance to inflict a critical hit (x2 Damage) from all moves that deal damage</li>
+<li>Upon leveling up one of the Explorer's moves can be upgraded, Each move has 6 ranks (I, II, III, IV, V, Ultra)</li>
+<li>Explorers can now learn special moves, such as moves from different classes and special demonic moves</li>
+<li>Added in new alternate passive abilities for each class</li>
+</ul>
+<h4>Status Effects</h4>
+<ul>
+<li>Both the Explorer and enemies can now inflict/be afflicted by several status effects (effects marked with [@] can only be received by the Explorer)</li>
+<li>- Poison: Lose x Health, reduces by one per turn</li>
+<li>- Decay: Lose x Health for y turns</li>
+<li>- Blaze: Lose x Health, 25% chance for the effect to wear off, 75% chance for the status to double</li>
+<li>- Shock: There is a 25*x% chance to not perform a move (0x ATK, 0x DEF) for x turns</li>
+<li>- [@] Blindness: Cannot see intents for x turns</li>
+<li>- [@] Madness: There is a 75% chance to use a random move for the next x turns</li>
+<li>- [@] Frost: The enemy moves first for x turns</li>
+<li>- [@] Lock: The same move cannot be used twice in a row for the next x turns</li>
+</ul>
+
+<h3><b>Improved Equipment</b></h3>
+<h4>Tier Quality</h4>
+<ul>
+<li>Equipment now has different tiers of quality that influence how much damage and defense they will provide:</li>
+<li>- S = Ranges from 1x to 2x stated value</li>
+<li>- A = Ranges from 1x to 1.5x stated value</li>
+<li>- B = Ranges from 1x to 1.25x stated value</li>
+<li>- C = Will always provide the stated value</li>
+<li>- D = Ranges from 0.75x to 1x stated value</li>
+<li>- E = Ranges from 0.5x to 1x stated value</li>
+<li>- F = Ranges from 0x to 1x stated value</li>
+<li>- Broken = Will always provide 0x the stated value</li>
+<li>All tiers can spawn as a normal drop/reward, but rarer tiers are found more frequently from Mini-Bosses and Stage Bosses</li>
+<li>Equipment can also be upgraded beyond S tier or, in rare cases, purchased from a special Merchant</li>
+</ul>
+<h4>Equipment Durability</h4>
+<ul>
+<li>Equipment now has durability based on it’s tier</li>
+<li>An equipment piece can take some damage before it's durability will permanently decrease, the durability triggers are as follows:</li>
+<li>- Weapons will lose durability if a player attack does no damage</li>
+<li>- Armour will lose durability if the player is hit with an attack</li>
+<li>- Relics will lose durability if the player takes damage</li>
+</ul>
+<h4>Miscellaneous Changes</h4>
+<ul>
+<li>Up to three equipment pieces can now be kept to be automatically sold to Merchants</li>
+<li>If a new piece of equipment is kept while three are already held it will replace the one with the least value, even if that value exceeds that of the new piece</li>
+<li>If a piece of equipment is replaced for a newer one then that piece will be kept to be sold if there is a free spot or it's value exceeds that of the one with the least value</li>
+<li>Weapon scrapping has been reworked, now the Explorer can choose which of their weapons (main, offhand, or secondary) to enhance</li>
+</ul>
+
+<h3><b>Improved Encounters</b></h3>
+<h4>Merchants</h4>
+<ul>
+<li>Added four new Merchants:</li>
+<li>- The Weaponer - Only sells weapons</li>
+<li>- The Armourist - Only sells armour</li>
+<li>- The Relificer - Only sells relics</li>
+<li>- The Exoticist - Only sells high tier items</li>
+<li>Merchants will now purchase any items the player has kept to sell automatically at the start of the encounter</li>
+<li>The player can now purchase multiple items from merchants and can also sell their equipped items</li>
+<li>Purchased items now have the same options as looted items (scrap, replace secondary, replace offhand, etc.)</li>
+</ul>
+<h4>Sigils</h4>
+<ul>
+<li>Demon Sigil - Reworked and added outcomes to "Worship Demon"</li>
+<li>Portal Sigil - Each enemy skipped advances the difficulty twice as much, no longer lose health</li>
+<li>Portal Sigil - Now has an option to jump off the sigil at the cost of 30 Health, twice the original health cost of staying on</li>
+</ul>
+<h4>The Smith</h4>
+<ul>
+<li>Reworked smithing options to be a bit more useful</li>
+<li>All options now cost (50*stage) Gold</li>
+</ul>
+<h4></h4>
+<ul>
+<li>The Library - Reworked Lore Books</li>
+<li>Cursed Tome - Now has a chance to give the Explorer a demonic move or spawn a rare Mini-Boss</li>
+<li>Dungeon Explorer - Can now "Share Knowledge" with Explorer</li>
+</ul>
+
+<h3><b>Other</b></h3>
+<ul>
+<li>Various other bug-fixes</li>
+</ul>
+
+</figure>
+</hgroup>
+</article>
+</section>
+
+<aside>
+<section class = "about">
+<h2>Useful Links</h2>
+<p><a href = "https://www.facebook.com/pg/roguelikebot1980">Facebook Page</a></p>
+<p><a href = "https://botappreciationsociety.fandom.com/wiki/Rogue-likebot_1980">BAS Wiki Page</a></p>
+<p><a href = "https://logarathon1.github.io/rogue-likebot1980/release-log">Release Log</a></p>
+<p><a href = "https://logarathon1.github.io/rogue-likebot1980/guide">Guide</a></p>
+<p><a href = "https://logarathon1.github.io/rogue-likebot1980/hall-of-fame">Hall of Fame</a></p>
+</section>
+</aside>
+
+<section class = "text">
+<article>
+<figure>
 <h2><u>Rogue-likebot 1980 v1.2 Details</u></h2>
 <p>16/02/2019</p>
 <h3><b>Encounters</b></h3>
@@ -93,17 +214,6 @@
 </hgroup>
 </article>
 </section>
-
-<aside>
-<section class = "about">
-<h2>Useful Links</h2>
-<p><a href = "https://www.facebook.com/pg/roguelikebot1980">Facebook Page</a></p>
-<p><a href = "https://botappreciationsociety.fandom.com/wiki/Rogue-likebot_1980">BAS Wiki Page</a></p>
-<p><a href = "https://logarathon1.github.io/rogue-likebot1980/release-log">Release Log</a></p>
-<p><a href = "https://logarathon1.github.io/rogue-likebot1980/guide">Guide</a></p>
-<p><a href = "https://logarathon1.github.io/rogue-likebot1980/hall-of-fame">Hall of Fame</a></p>
-</section>
-</aside>
 
 <article>
 <section class = "text">
