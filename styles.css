@@ -14,7 +14,7 @@ border: 2px solid #000000;
 background-color: #313131;}
 
 header{
-height: 160px;
+height: 172px;
 background-image: url("Images/banner.png");}
 h1{
 text-indent: -9999px;
@@ -22,29 +22,36 @@ width: 1200px;
 height: 160px;
 margin: 0px;}
 
-nav, footer{
+nav{
+clear: both;
+color: #bbbbbb;
+background-color: #232323;}
+
+footer{
 clear: both;
 color: #bbbbbb;
 background-color: #232323;
 height: 30px;}
 
 nav ul{
+list-style-type: none;
 margin: 0px;
-padding: 5px 30px 5px 30px;}
+padding: 0px 30px 0px 30px;
+overflow: hidden;}
 
-nav li{
-display: inline;
-margin-right: 40px;}
+nav li{	
+display: block;
+float: left;
+}
 
 nav li a{
-color: #bbbbbb;}
+text-align: center;
+color: #bbbbbb;
+padding: 0px 22px 0px 22px;}
 
 nav li a:hover, nav li current {
 color: #ffffff;
-background-color: #525252;
-padding: 5px 22px 5px 22px;
-margin-right: -22px;
-margin-left: -22px;}
+background-color: #525252;}
 
 section.imagewithtext{
 float: left;
