@@ -5,10 +5,12 @@ $(function () {
     bar += '<nav>';
     bar += '<ul class="nav navbar-nav">';
     bar += '<li id="home"><a href = "https://logarathon1.github.io/">Home</a></li>';
-    bar += '<li id="rogue-likebot1980"><a href = "https://logarathon1.github.io/rogue-likebot1980">Rogue-likebot 1980</a></li>';
-    bar += '<li id="thanosbotthanosbot"><a href = "https://logarathon1.github.io/thanos-bot">Thanos Bot Thanos Bot</a></li>';
-	bar += '<li id="mdhhcd-bot"><a href = "https://logarathon1.github.io/mdhhcd-bot">MDHHCD-Bot</a></li>';
 	bar += '<li id="russianroulettebot"><a href = "https://logarathon1.github.io/russian-roulette-bot">Russian Roulette Bot</a></li>';
+	bar += '<li id="interstellarbot1973"><a href = "https://logarathon1.github.io/interstellarbot1973">Interstellar Bot 1973</a></li>';
+	bar += '<li id="conservationbot"><a href = "https://logarathon1.github.io/conservationbot">Conservation Bot 1964</a></li>';
+    bar += '<li id="rogue-likebot1980"><a href = "https://logarathon1.github.io/rogue-likebot1980">Rogue-likebot 1980</a></li>';
+	bar += '<li id="mdhhcd-bot"><a href = "https://logarathon1.github.io/mdhhcd-bot">MDHHCD-Bot</a></li>';
+    bar += '<li id="thanosbotthanosbot"><a href = "https://logarathon1.github.io/thanos-bot">Thanos Bot Thanos Bot</a></li>';
 	bar += '<li id="casinobot888"><a href = "https://logarathon1.github.io/casino-bot">Casino Bot 888</a></li>';
     bar += '</ul>';
     bar += '</nav>';
