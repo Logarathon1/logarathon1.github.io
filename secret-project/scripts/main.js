@@ -1,4 +1,4 @@
-var tileSize = 50;
+var tileSize = 40;
 var movingPiece;
 var room;
 var explorers = [];
